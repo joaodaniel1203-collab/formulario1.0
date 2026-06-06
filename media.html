@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <h1>Média</h1>
+      <style>
+            *{
+                  margin: 0;
+                  padding: 0;
+                  font-family: Arial, Helvetica, sans-serif;
+            } 
+            
+            form {
+                        background-color: #fff;
+                        padding: 20px;
+                        margin: 20px auto;
+                        width: 300px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                        height: 300px;    
+            }
+            body{
+                        background-color: #f0f0f0;
+                  }
+      </style>
+</head>
+<body>
+      <form action="action_page.php">
+            <p>
+                  <label for="imedia" >Digite a média: </label>
+                  <input type="number" id="imedia" name="imedia" step="0.1" min="0" max="10" placeholder="Digite a média (0-10)">
+                  <br><br>
+            </p>
+            
+            <p> id="month"> 
+                  <label for="month" >Selecione o mês: </label>
+                  <input type="month" id="month" name="month" value="2024-06" min="2020-01" max="2025-12">
+            </p>
+            <p>
+                  <label for="idate" >Selecione a data: </label>
+                  <input type="date" id="idate" name="idate" value="2024-06-01" min="2020-01-01" max="2025-12-31">
+            </p>
+            <p>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Limpar">
+            </p>
+      </form>
+</body>
+</html>
